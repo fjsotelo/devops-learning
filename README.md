@@ -2,7 +2,8 @@
 
 ## Hardware
 
-### Servidor
+
+### Server
 - Intel i5 M430
 - 5 GB RAM
 - Ubuntu Server
@@ -12,9 +13,8 @@
 - Windows 11
 - WSL2
 
-## Objetivo
-
-Aprender:
+## General objective
+Learn:
 
 - Linux
 - Git
@@ -22,3 +22,7 @@ Aprender:
 - Jenkins
 - Ansible
 - Kubernetes
+# Session 1 completed
+Go to /devops-learning/notes/Session1.txt for more details
+# Session 2 completed
+Go to /devops-learning/notes/Session2.txt for more details

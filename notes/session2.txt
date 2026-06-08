@@ -1,0 +1,25 @@
+#######SESSION#2
+#########STEPS TAKEN
+1. Create SSH key on WSL
+	ssh-keygen -t ed25519 -C "fjsotelo85@gmail.com"
+2. Copy SSH key to server
+	ssh-copy-id devops@192.168.68.102
+	(type password)
+3. Test key
+	ssh devops@192.168.68.102
+4. Configure SSH alias:
+	vim ~/.ssh/config
+		Host labsrv
+    		HostName 192.168.68.102
+    		User devops
+5. Git set up
+	git config --global user.name "Tu Nombre"
+	git config --global user.email "tu_correo@example.com"
+6. Add SSH key in GitHub
+	cat ~/.ssh/id_ed25519.pub
+	Copy the content
+7. In Github, go to: Settings->SSH and GPG keys->New SSH Key
+	Paste the content copied in step 6.
+8. Install VS code On Windows Machine.
+9. Install 'Remote-SSH' extension
+10. Connect to labsrv via SSH in VS code

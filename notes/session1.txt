@@ -1,0 +1,33 @@
+####SESSION #1
+######STEPS TAKEN:
+1. Install Ubuntu server on main srv
+2. Upgrade Ubuntu OS.
+	sudo apt update
+	sudo apt upgrade -y
+3. Create new user:
+	sudo adduser devops
+	sudo usermod -aG sudo devops
+4. Check SSH in main server
+	sudo systemctl status ssh
+	sudo apt install openssh-server -y (In case it hadn't been installed)
+	Start:
+		sudo systemctl enable ssh
+		sudo systemctl start ssh
+5. Install apps:
+	sudo apt install -y \
+	curl \
+	wget \
+	git \
+	vim \
+	htop \
+	net-tools \
+	tree \
+	unzip	
+6. Install WSL2 on MS windows machine (open PowerShell):
+	wsl --install
+7. Upgrade OS.
+8. Install apps on WSL (Go to Step 5)
+9. Connect to main server via SSH from WSL2
+	ssh devops@192.168.68.102
+
+
